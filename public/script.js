@@ -26,9 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const projectCard = document.createElement('div');
             projectCard.classList.add('project-card');
             projectCard.innerHTML = `
-                <img src="${project.image_url || 'https://via.placeholder.com/300x200?text=No+Image'}" 
-                 alt="${project.name}" 
-                 onerror="this.src='http://placehold.it/360x200';" />
+                <img src="${project.image_url}" 
+                 alt="${project.name}"  >
                 <h2>${project.name}</h2>
                 <p>${project.description}</p>
                 <p class="technologies"><strong>Technologies:</strong> ${project.technologies}</p>
