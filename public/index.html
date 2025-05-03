@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project List</h1>
+
+        <!-- Form for adding new projects -->
+        <div class="add-project-form">
+            <h2>Add a New Project</h2>
+            <form id="add-project-form">
+                <input type="text" id="name" placeholder="Project Name" required>
+                <textarea id="description" placeholder="Project Description" required></textarea>
+                <input type="text" id="technologies" placeholder="Technologies" required>
+                <input type="url" id="image_url" placeholder="Image URL" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+
+        <div id="projects-list" class="projects-list"></div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="/script.js"></script>
+</body>
+</html>
